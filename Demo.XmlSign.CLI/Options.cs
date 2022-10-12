@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CommandLine;
+﻿using CommandLine;
 
 namespace Demo.XmlSign.CLI
 {
@@ -23,6 +18,9 @@ namespace Demo.XmlSign.CLI
 
         [Option('n', "name", Required = false, HelpText = "Reference ID attribute name")]
         public string ReferenceIdAttributeName { get; set; }
+
+        [Option('p', "password", Required = false, HelpText = "Password for certificate")]
+        public string CertificatePassword { get; set; }
 
     }
 }
