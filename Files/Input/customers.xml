@@ -1,0 +1,7 @@
+<root>
+	<Customers id="CustomersList">
+		<Customer>
+			<Name>Nik</Name>
+		</Customer>
+	</Customers>
+</root>
