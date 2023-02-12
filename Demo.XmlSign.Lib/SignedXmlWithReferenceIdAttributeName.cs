@@ -3,9 +3,9 @@ using System.Security.Cryptography;
 using System.Security.Cryptography.Xml;
 using System.Xml;
 
-namespace Demo.XmlSign.CLI
+namespace Demo.XmlSign.Lib
 {
-    class SignedXmlWithReferenceIdAttributeName : SignedXml
+    public class SignedXmlWithReferenceIdAttributeName : SignedXml
     {
         private string _referenceIdAttributeName;
         public SignedXmlWithReferenceIdAttributeName(XmlDocument xmlDocument, string referenceIdAttributeName)

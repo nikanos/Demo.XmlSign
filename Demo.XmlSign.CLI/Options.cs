@@ -14,7 +14,7 @@ namespace Demo.XmlSign.CLI
         public string Certificate { get; set; }
 
         [Option('r', "referenceid", Required = true, HelpText = "Reference ID for element to be signed")]
-        public string ReferenceID { get; set; }
+        public string ReferenceId { get; set; }
 
         [Option('n', "name", Required = false, HelpText = "Reference ID attribute name")]
         public string ReferenceIdAttributeName { get; set; }

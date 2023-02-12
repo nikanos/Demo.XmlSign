@@ -20,6 +20,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Input", "Input", "{3AB1BC03
 		Files\Input\samltoken_referencename_id.xml = Files\Input\samltoken_referencename_id.xml
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.XmlSign.Lib", "Demo.XmlSign.Lib\Demo.XmlSign.Lib.csproj", "{F74340AA-DCDC-4DEC-B7B5-74AC881D3149}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{0586B37F-3F47-4C15-B166-10FE16E7C0FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0586B37F-3F47-4C15-B166-10FE16E7C0FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0586B37F-3F47-4C15-B166-10FE16E7C0FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F74340AA-DCDC-4DEC-B7B5-74AC881D3149}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F74340AA-DCDC-4DEC-B7B5-74AC881D3149}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F74340AA-DCDC-4DEC-B7B5-74AC881D3149}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F74340AA-DCDC-4DEC-B7B5-74AC881D3149}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,4 +1,5 @@
 ﻿using CommandLine;
+using Demo.XmlSign.Lib;
 using System;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
@@ -29,8 +30,9 @@ namespace Demo.XmlSign.CLI
                 XmlDocument xmlDoc = new XmlDocument();
                 xmlDoc.Load(opts.InputFile);
 
-                var xmlSigner = new XmlSigner();
-                XmlDocument signedXml = xmlSigner.SignXml(xmlDoc, signingCertificate, opts.ReferenceID, opts.ReferenceIdAttributeName);
+                var signedXmlFactory = new SignedXmlFactory();
+                var xmlSigner = new XmlSigner(signedXmlFactory);
+                XmlDocument signedXml = xmlSigner.SignXml(xmlDoc, signingCertificate, opts.ReferenceId, opts.ReferenceIdAttributeName);
                 Console.WriteLine("XML signed sucessfully!");
 
                 Console.WriteLine($"Saving result to {opts.OutputFile}");
